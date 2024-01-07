@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    margin: 100px 100px 30px 100px;
+    overflow: hidden;
+   
+    
+    
+    flex-direction: column;
+    .top{
+      display: flex;
+      gap: 120px;
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: rgb(86, 79, 79);
+        h2{
+            color: rgb(52, 49, 49);
+            font-weight: 500;
+        }
+    }
+}
+.bottom{
+ display: flex;
+ align-items: center;
+ margin:40px 0px 20px 0;
+
+ .logo{
+    margin-right: 100px;
+ }
+}
+}
