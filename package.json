@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce",
+  "name": "ecomme",
   "version": "0.1.0",
-  "homepage": "https://nazib999.github.io/e-commerce",
+  "homepage": "https://nazib999.github.io/e-commerce/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
