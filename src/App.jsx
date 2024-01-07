@@ -12,18 +12,19 @@ const App = () => {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/e-commerce" element={<Home />} />
-          <Route path="/product/:id" element={<Product />} />
-          <Route path="/products/:id" element={<Products />} />
-         
-        </Routes>
-        <Footer />
+      <Navbar/>
+      <Routes>
+       <Route exact path='/' element={<Home/>}/>
+       <Route exact path='/e-commerce' element={<Home/>}/>
+       <Route path='/product/:id' element={<Product/>}/>
+       <Route path='/products/:id' element={<Products/>}/>
+       <Route path='*' element={<Not_found/>}/>
+
+      </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
 };
 
-export default App;
+export default App
