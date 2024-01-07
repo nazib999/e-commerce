@@ -3,9 +3,7 @@ import React from 'react'
 import './Contact.scss'
 
 const Contact = () => {
-  const OnTest=()=>{
-    alert("test");
-  }
+  
   return (
     <div className='contact'>
       <div className="left">
@@ -13,7 +11,7 @@ const Contact = () => {
       </div>
       <div className="center">
         <input type="email" placeholder='Enter your e-mail'/>
-        <button onClick={OnTest()}>join us</button>
+        <button>join us</button>
       </div>
       <div className="right">
         <Facebook />
