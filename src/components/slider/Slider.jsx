@@ -3,9 +3,9 @@ import './Slider.scss'
 import { EastOutlined, WestOutlined } from '@mui/icons-material'
 
 const data=[
-    "https://images.pexels.com/photos/17454892/pexels-photo-17454892/free-photo-of-objects-in-mirror-are-losing.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/9752436/pexels-photo-9752436.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/1590549/pexels-photo-1590549.jpeg?auto=compress&cs=tinysrgb&w=600"
+    "https://img.freepik.com/premium-photo/young-business-woman-working-online-ecommerce-shopping-her-shop-young-woman-seller-prepare-parcel-box-product-deliver-customer-online-selling-ecommerc_35691-13024.jpg?size=626&ext=jpg&ga=GA1.1.443864448.1703073303&semt=sph",
+    "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZSUyMGNvbW1lcmNlfGVufDB8fDB8fHww"
 ]
 const Slider = () => {
     const [currentSlide,setCurrentSlide] = useState(0);

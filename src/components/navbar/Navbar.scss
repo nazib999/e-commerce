@@ -5,7 +5,12 @@
     height: 60px;
     align-items: center;
     justify-content: space-between;
-
+    
+    .link{
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+    }
 
     .item{
         display: flex;
@@ -13,10 +18,7 @@
         justify-content: center;
         gap: 5px;
 
-        .link{
-            text-decoration: none;
-            color: #000;
-        }
+        
     }
 
     .left{
@@ -27,6 +29,7 @@
     }
     .center{
        font-size: 30px;
+       cursor: pointer;
     }
     .right{
         display: flex;

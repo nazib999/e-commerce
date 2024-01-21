@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="left">
             <div className="item">
              <KeyboardArrowDown/>
-             <span>Flag</span>
+             <span>FLAG</span>
             </div>
             <div className="item">
              <KeyboardArrowDown/>
@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="center">
-            <div className="logo">LAMADEV</div>
+            <div className="logo"><Link className='link' to={'/'}>E-COMMERCE</Link></div>
         </div>
         <div className="right">
         <div className="item">
@@ -40,7 +40,7 @@ const Navbar = () => {
              
             </div>
             <div className="item">
-            <Link className='link' to='/'>Contact</Link>
+            <Link className='link' to={'/contact'} >Contact</Link>
              
             </div>
             <div className="item">
