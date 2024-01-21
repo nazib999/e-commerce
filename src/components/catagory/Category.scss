@@ -1,14 +1,25 @@
+@import '../global.scss';
 .category{
    height: 80vh;
    margin: 100px;
    display: flex;
    gap: 10px;
+   @include mobile{
+    margin: 70px 0;
+     
+   }
    
    .col{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+    @include mobile{
+        &.third{
+            display: none;
+        }
+    }
    }
    .col-l{
     flex: 2;
@@ -38,6 +49,9 @@
      height: 40px;
      padding: 10px;
      cursor: pointer;
+     @include mobile{
+       display: none;
+     }
     }
    }
 }

@@ -14,9 +14,9 @@ const Category = () => {
         </div>
         </div> 
 
-       <div className="col">
+       <div className="col third">
         <div className="row">
-        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+        <img  src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
             <button>new</button>
         </div>
         </div> 

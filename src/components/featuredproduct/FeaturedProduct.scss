@@ -1,11 +1,16 @@
+@import '../global.scss';
 .fproduct{
     margin: 100px;
+    @include mobile{
+        margin: 50px 30px;    
+    }
     
     .top{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
+        
         h2{
             flex: 2;
             font-size: 30px;
@@ -14,13 +19,15 @@
         p{
             flex: 3;
             color: gray;
+            text-align: justify;
         }
     }
     .bottom{
      display: flex;
      align-items: center;
      justify-content: center;
-     gap: 50px;
+     gap: 30px;
+     flex-wrap: wrap;
     
      
 
