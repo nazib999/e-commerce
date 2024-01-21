@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {KeyboardArrowDown,Search,Person,FavoriteBorder,ShoppingCart} from '@mui/icons-material/';
 import { Link } from 'react-router-dom';
 import './Navbar.scss'
+import Menu from '../menu/Menu';
 
 
 const Navbar = () => {
+  const [menuOpen,setMenuOpen]=useState(false);
   return (
-    <div className='navbar'>
+    <div className='navbar active'>
         <div className="left">
             <div className="item">
              <KeyboardArrowDown/>
@@ -57,7 +59,8 @@ const Navbar = () => {
              </div>
             </div>
         </div>
-
+        <div className="menuIcon" onClick={()=>setMenuOpen(!menuOpen)}><i class="fas fa-bars"></i></div>
+      {menuOpen &&  <Menu/>}
     </div>
   )
 }

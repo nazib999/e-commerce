@@ -5,8 +5,8 @@ const Products = () => {
     const [selected,setSelected] = useState(0);
     const [count,setCount] = useState(0)
     const images =[
-        'https://images.pexels.com/photos/19558102/pexels-photo-19558102/free-photo-of-girl-holding-a-basket-posing-in-front-of-a-newspaper-kiosk.jpeg?auto=compress&cs=tinysrgb&w=600',
-        'https://images.pexels.com/photos/19558088/pexels-photo-19558088/free-photo-of-girl-holding-a-plant-posing-in-front-of-a-newspaper-kiosk.jpeg?auto=compress&cs=tinysrgb&w=600'
+        'https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNoaXJ0fGVufDB8fDB8fHww',
+        'https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hpcnR8ZW58MHx8MHx8fDA%3D'
     ]
   return (
     <div className='products'>

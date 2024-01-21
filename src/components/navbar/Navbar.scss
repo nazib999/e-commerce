@@ -1,10 +1,15 @@
-
+@import '../global.scss';
 .navbar{
     padding: 10px 100px;
     display: flex;
     height: 60px;
     align-items: center;
     justify-content: space-between;
+    
+   
+    @include mobile{
+        padding: 10px 20px;
+    }
     
     .link{
         text-decoration: none;
@@ -26,16 +31,25 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        @include mobile{
+            display: none;
+        }
     }
     .center{
        font-size: 30px;
        cursor: pointer;
+       @include mobile{
+       font-size: 20px;
+    }
     }
     .right{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        @include mobile{
+            display: none;
+        }
 
         .icons{
             display: flex;
@@ -64,6 +78,12 @@
                    
                 }
             }
+        }
+    }
+    .menuIcon{
+        display: none;
+        @include mobile{
+            display: block;
         }
     }
 }
