@@ -1,89 +1,85 @@
-@import '../global.scss';
-.navbar{
-    padding: 10px 100px;
+@import "../global.scss";
+.navbar {
+  padding: 10px 100px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    padding: 10px 20px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .item {
     display: flex;
-    height: 60px;
     align-items: center;
-    justify-content: space-between;
-    
-   
-    @include mobile{
-        padding: 10px 20px;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include mobile {
+      display: none;
     }
-    
-    .link{
-        text-decoration: none;
-        color: #000;
-        text-transform: uppercase;
+  }
+  .center {
+    font-size: 30px;
+    cursor: pointer;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include mobile {
+      display: none;
     }
 
-    .item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
 
-        
-    }
+      .cart {
+        position: relative;
 
-    .left{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        @include mobile{
-            display: none;
+        span {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          background: green;
+          color: #fff;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
+      }
     }
-    .center{
-       font-size: 30px;
-       cursor: pointer;
-       @include mobile{
-       font-size: 20px;
+  }
+  .menuIcon {
+    display: none;
+    @include mobile {
+      display: block;
     }
-    }
-    .right{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        @include mobile{
-            display: none;
-        }
-
-        .icons{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-
-            .cart{
-                position: relative;
-              
-
-                span{
-                    position: absolute;
-                    top: -10px;
-                    right: -10px;
-                    background: green;
-                    color: #fff;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    font-size: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                   
-                }
-            }
-        }
-    }
-    .menuIcon{
-        display: none;
-        @include mobile{
-            display: block;
-        }
-    }
+  }
 }

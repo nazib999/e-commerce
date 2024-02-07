@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="menuIcon" onClick={()=>setMenuOpen(!menuOpen)}><i class="fas fa-bars"></i></div>
-      {menuOpen &&  <Menu/>}
+      {menuOpen &&  <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}
     </div>
   )
 }
